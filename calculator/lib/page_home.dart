@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'widgets/radios.dart';
 
 class PageHome extends StatefulWidget {
   @override
@@ -10,18 +11,32 @@ class _PageHomeState extends State<PageHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal.shade900,
       body: Container(
-        alignment: Alignment.topCenter,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        color: Colors.teal.shade900,
+        padding: EdgeInsets.only(
+          top: 50,
+          right: 40,
+          left: 40,
+        ),
+        child: ListView(
           children: <Widget>[
-            Text('Calc',
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 48,
+            SizedBox(
+              width: 128,
+              height: 128,
+              child: Image.asset("images/calc.png",
+              color: Colors.white,
               ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text("Calc",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 48,
+              fontWeight: FontWeight.bold
+            ),
             )
           ],
         ),
