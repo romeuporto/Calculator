@@ -1,3 +1,4 @@
+import 'package:calculator/widgets/text_form_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'widgets/radios.dart';
@@ -36,8 +37,13 @@ class _PageHomeState extends State<PageHome> {
               color: Colors.white,
               fontSize: 48,
               fontWeight: FontWeight.bold
+              ),
             ),
-            )
+            CaixaTex(),
+            SizedBox(
+              height: 20,
+            ),
+            CaixaTex(),
           ],
         ),
       ),
